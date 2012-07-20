@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Matt's Project Palette'</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li><%= link_to "Projects" %></li>
+            <li><%= link_to "Views" %></li>
+            <li><%= link_to "Contact Us" %></li>
+            <li><%= link_to "About Matt" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>	
+	
+
+<div class="container">
+	<div class="row">
+		<div class="span10"> <%= yield %> </div>
+		<div class="span2">
+			<h1>About Me</h1>
+				I'm really cool. Look at all the projects I've done.
+		</div>	
+	</div>
+
+</div>
+</body>
+</html>
